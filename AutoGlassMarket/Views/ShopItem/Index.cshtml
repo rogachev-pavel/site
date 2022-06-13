@@ -1,0 +1,117 @@
+﻿@model ShopItemViewModel
+
+
+
+
+<form asp-controller="ShopItem" asp-action="Index" method="get" class="form1">
+
+
+    <select class="form-select form-select-sm row mt-4" aria-label=".form-select-sm example" id="Brand" name="Brand">
+
+
+        @foreach (var item2 in Model.GetBrands)
+        {
+            <option value="@item2.Name">@item2.Name</option>
+        }
+
+    </select>
+
+
+
+    <select class="form-select form-select-sm row mt-4" aria-label=".form-select-sm example" id="Model" name="Model" @Model.open>
+
+
+        @foreach (var item2 in Model.GetModels)
+        {
+
+            <option value="@item2.carModel">@item2.carModel</option>
+        }
+    </select>
+
+</form>
+
+
+
+<div class="row mt-5  mb-2" id="cars">
+    @foreach (var car in Model.AllCars)
+    {
+
+        <div class="col-lg-3 shadow-sm p-3 mb-5 bg-body rounded">
+            <img class="img-thumbnail" src="@car.Glasses.img" alt="@car.fullinfo" />
+            <h2>@car.Name</h2>
+            <p>Модель: @car.carModel</p>
+            <p>Тип кузова: @car.cartype</p>
+            <p>Cтекло: @car.Glasses.typeGlass</p>
+            <p>Информация: @car.fullinfo</p>
+            <p>Цена: @car.price.ToString("c")</p>
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Купить</button>
+        </div>
+
+    }
+    <form asp-action="Create">
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Заполните форму и мы свяжемся с вами</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="modal-body">
+                        <label asp-for="UserName" class="control-label"></label>
+                        <input asp-for="UserName" class="form-control" />
+                        <span asp-validation-for="UserName" class="text-danger"></span>
+                    </div>
+                    <div class="modal-body">
+                        <label asp-for="UserNumber" class="control-label"></label>
+                        <input asp-for="UserNumber" class="form-control" />
+                        <span asp-validation-for="UserNumber" class="text-danger"></span>
+                    </div>
+                    <div class="modal-body">
+                        <label asp-for="ProductInformation" class="control-label"></label>
+                        <input asp-for="ProductInformation" class="form-control" />
+                        <span asp-validation-for="ProductInformation" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Create" class="btn btn-primary" />
+                    </div>
+
+                    Наш номер телефона +7 (903)-644-44-40
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    <button type="submit" class="btn btn-primary">Заказать звонок</button>
+                </div>
+
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+
+<script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+<script>
+
+    $(document).ready(function() {
+        $("#Brand").change(function() {
+
+            $(".form1").submit();
+        });
+    });
+
+    $(document).ready(function() {
+        $("#Model").change(function() {
+
+            $(".form1").submit();
+        });
+    });
+
+
+</script>

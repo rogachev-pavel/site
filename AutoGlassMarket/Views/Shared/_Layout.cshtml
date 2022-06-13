@@ -1,0 +1,92 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/StyleSheet.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <img src="/img/LitlleLogoGlass.png" width="95" alt="Лого">
+                <em><span class="h2" style="color:#0d6efd"> АвтоСтекла32</span></em>
+            </a>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">Главная</a></li>
+                <li class="nav-item"><a href="/ShopItem/List" class="nav-link">Товары</a></li>
+                <li class="nav-item"><a href="/CarsBrands" class="nav-link">Услуги</a></li>
+                <li class="nav-item"><a href="/Contacts/Index" class="nav-link">Контакты</a></li>
+            </ul>
+        </header>
+    </div>
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <img src="/img/NewOld2.png" class="d-block w-100 " alt="Лого">
+                <div class="container">
+                    <div class="carousel-caption text-xl-start">
+                        <h1>Как нас найти?</h1>
+                        <p>текст</p>
+                        <p><a class="btn btn-lg btn-primary" href="#">Контакты</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item active">
+                <img src="/img/NewOld.png" class="d-block w-100" alt="Лого">
+                <div class="container">
+                    <div class="carousel-caption ">
+                        <h1>Самые выгодные цены на стекло в Брянске</h1>
+                        <p>что бы уточнить цену, найдите свое стекло, либо позвоните нам!</p>
+                        <p><a class="btn btn-lg btn-primary" href="/ShopItem/Index">Выбрать стекло</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/img/NewOld1.png" class="d-block w-100" alt="Лого">
+                <div class="container">
+                    <div class="carousel-caption text-xl-end">
+                        <h1>,,,,</h1>
+                        <p><a class="btn btn-lg btn-primary" href="#">Выбрать стекло</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container mt-5">
+        @RenderBody()
+    </div>
+
+    <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>© 2017–2022 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+
+    <script src="~/js/bootstrap.min.js"></script>
+    @RenderSection("Scripts", required: false) 
+</body>
+</html>
+
