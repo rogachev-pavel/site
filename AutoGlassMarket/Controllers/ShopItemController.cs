@@ -46,8 +46,8 @@ namespace AutoGlassMarket.Controllers
 
             if (IdGlasses == 0)
             {
-                obj.AllCars = _allCars.allCars;
                 obj.GetModels = _allCars.allCars.GroupBy(c => c.carModel).Where(c => c.Any()).Select(c => c.First()).ToList();
+                obj.AllCars = await Task.Run(() => _allCars.allCars);
             }
 
             else
