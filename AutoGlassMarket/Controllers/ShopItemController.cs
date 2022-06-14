@@ -35,14 +35,15 @@ namespace AutoGlassMarket.Controllers
 
         [Route("ShopItem/Index/{IdGlasses?}")]
         [HttpGet] 
-        public async Task<IActionResult> Index(int IdGlasses, string Brand, string Model)
+        public async Task<IActionResult> Index(int IdGlasses, string Brand, string Model, string Cartype)
         {
             ViewBag.Title = "Товары";
 
             ShopItemViewModel obj = new ShopItemViewModel();
 
             obj.GetBrands = _allCars.allCars.GroupBy(c => c.Name).Where(c => c.Any()).Select(c => c.First()).ToList();
-            obj.open = "disabled";
+            obj.openModel = "disabled";
+            obj.openType = "disabled";
 
             if (IdGlasses == 0)
             {
@@ -51,20 +52,31 @@ namespace AutoGlassMarket.Controllers
 
             else
             {
+                obj.GetcarType = _allCars.allCars.Where(x => x.GlassesId.Equals(IdGlasses)).GroupBy(x => x.cartype).Where(c => c.Any()).Select(c => c.First()).ToList();
                 obj.GetModels = _allCars.allCars.Where(x => x.GlassesId.Equals(IdGlasses)).GroupBy(x => x.carModel).Where(c => c.Any()).Select(c => c.First()).ToList();
                 obj.AllCars = await Task.Run(() => _allCars.allCars.Where(x => x.GlassesId.Equals(IdGlasses)).ToList());
 
                 if (!String.IsNullOrEmpty(Brand))
-                {                
+                {
+                    obj.GetcarType = _allCars.allCars.Where(x => x.GlassesId.Equals(IdGlasses)).Where(x => x.Name.Contains(Brand)).GroupBy(x => x.cartype).Where(c => c.Any()).Select(c => c.First()).ToList();
                     obj.GetModels = _allCars.allCars.Where(x => x.GlassesId.Equals(IdGlasses)).Where(x => x.Name.Contains(Brand)).GroupBy(x => x.carModel).Where(c => c.Any()).Select(c => c.First()).ToList();
                     obj.GetBrands = _allCars.allCars.Where(x => x.GlassesId.Equals(IdGlasses)).Where(x => x.Name.Contains(Brand)).GroupBy(c => c.Name).Where(c => c.Any()).Select(c => c.First()).ToList();
-                    obj.open = " ";
+                    obj.openModel = " ";
                     obj.AllCars = await Task.Run(() => _allCars.allCars.Where(x => x.GlassesId.Equals(IdGlasses)).Where(x => x.Name.Contains(Brand)).ToList());
 
                     if (!String.IsNullOrEmpty(Model))
                     {
+                        obj.GetcarType = _allCars.allCars.Where(x => x.GlassesId.Equals(IdGlasses)).Where(x => x.Name.Contains(Brand)).Where(x => x.carModel.Contains(Model)).GroupBy(x => x.cartype).Where(c => c.Any()).Select(c => c.First()).ToList();
                         obj.GetModels = _allCars.allCars.Where(x => x.GlassesId.Equals(IdGlasses)).Where(x => x.Name.Contains(Brand)).Where(x => x.carModel.Contains(Model)).GroupBy(x => x.carModel).Where(c => c.Any()).Select(c => c.First()).ToList();
                         obj.AllCars = await Task.Run(() => _allCars.allCars.Where(x => x.GlassesId.Equals(IdGlasses)).Where(x => x.Name.Contains(Brand)).Where(x => x.carModel.Contains(Model)).ToList());
+                        obj.openType = "";
+
+                        if (!String.IsNullOrEmpty(Cartype))
+                        {
+                            obj.GetcarType = obj.GetcarType = _allCars.allCars.Where(x => x.GlassesId.Equals(IdGlasses)).Where(x => x.Name.Contains(Brand)).Where(x => x.carModel.Contains(Model)).GroupBy(x => x.cartype).Where(c => c.Any()).Select(c => c.First()).ToList();
+                            obj.AllCars = await Task.Run(() => _allCars.allCars.Where(x => x.GlassesId.Equals(IdGlasses)).Where(x => x.Name.Contains(Brand)).Where(x => x.carModel.Contains(Model)).Where(x => x.cartype.Contains(Cartype)).ToList());
+                            
+                        }
                     }
                 }
 

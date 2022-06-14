@@ -164,3 +164,4 @@ C:\Users\Павел\source\repos\AutoGlassMarket\AutoGlassMarket\bin\Debug\net5.
 C:\Users\Павел\source\repos\AutoGlassMarket\AutoGlassMarket\bin\Debug\net5.0\MySql.Data.dll
 C:\Users\Павел\source\repos\AutoGlassMarket\AutoGlassMarket\bin\Debug\net5.0\Ubiety.Dns.Core.dll
 C:\Users\Павел\source\repos\AutoGlassMarket\AutoGlassMarket\bin\Debug\net5.0\ZstdNet.dll
+C:\Users\Павел\source\repos\AutoGlassMarket\AutoGlassMarket\obj\Debug\net5.0\Razor\Views\Services\Index.cshtml.g.cs

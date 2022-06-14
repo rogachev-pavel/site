@@ -10,9 +10,9 @@ namespace AutoGlassMarket.ViewsModel
     public class ShopItemViewModel
     {
         public IEnumerable<CarsBrand> AllCars { get; set; }
-        public IEnumerable<Glasses> AllGlasses { get; set; }
         public IEnumerable<CarsBrand> GetModels { get; set; }
         public IEnumerable <CarsBrand> GetBrands { get; set; }
+        public IEnumerable<CarsBrand> GetcarType { get; set; }
 
         [Required(ErrorMessage = "Введите имя")]
         [MaxLength(35, ErrorMessage = "Максимальная длинна 35символов")]
@@ -21,7 +21,8 @@ namespace AutoGlassMarket.ViewsModel
         public int UserNumber { get; set; }
         public string ProductInformation { get; set; }
 
-        public string open { get; set; }
+        public string openModel { get; set; }
+        public string openType { get; set; }
     }
 }
  
