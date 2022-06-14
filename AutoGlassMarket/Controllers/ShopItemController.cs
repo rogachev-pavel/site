@@ -46,14 +46,13 @@ namespace AutoGlassMarket.Controllers
 
             if (IdGlasses == 0)
             {
-                obj.GetModels = _allCars.allCars.GroupBy(c => c.carModel).Where(c => c.Any()).Select(c => c.First()).ToList();
-                obj.AllCars = await Task.Run(() => _allCars.allCars);
+                return RedirectToAction(nameof(List));
             }
 
             else
             {
-                obj.AllCars = _allCars.allCars.Where(x => x.GlassesId.Equals(IdGlasses)).ToList();
                 obj.GetModels = _allCars.allCars.Where(x => x.GlassesId.Equals(IdGlasses)).GroupBy(x => x.carModel).Where(c => c.Any()).Select(c => c.First()).ToList();
+                obj.AllCars = await Task.Run(() => _allCars.allCars.Where(x => x.GlassesId.Equals(IdGlasses)).ToList());
 
                 if (!String.IsNullOrEmpty(Brand))
                 {                
