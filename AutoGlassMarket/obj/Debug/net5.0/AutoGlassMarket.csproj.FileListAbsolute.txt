@@ -165,3 +165,14 @@ C:\Users\Павел\source\repos\AutoGlassMarket\AutoGlassMarket\bin\Debug\net5.
 C:\Users\Павел\source\repos\AutoGlassMarket\AutoGlassMarket\bin\Debug\net5.0\Ubiety.Dns.Core.dll
 C:\Users\Павел\source\repos\AutoGlassMarket\AutoGlassMarket\bin\Debug\net5.0\ZstdNet.dll
 C:\Users\Павел\source\repos\AutoGlassMarket\AutoGlassMarket\obj\Debug\net5.0\Razor\Views\Services\Index.cshtml.g.cs
+C:\Users\Павел\source\repos\AutoGlassMarket\AutoGlassMarket\bin\Debug\net5.0\AutoGlassMarket.StaticWebAssets.xml
+C:\Users\Павел\source\repos\AutoGlassMarket\AutoGlassMarket\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Павел\source\repos\AutoGlassMarket\AutoGlassMarket\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Павел\source\repos\AutoGlassMarket\AutoGlassMarket\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Павел\source\repos\AutoGlassMarket\AutoGlassMarket\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+C:\Users\Павел\source\repos\AutoGlassMarket\AutoGlassMarket\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\Павел\source\repos\AutoGlassMarket\AutoGlassMarket\bin\Debug\net5.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\Павел\source\repos\AutoGlassMarket\AutoGlassMarket\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Павел\source\repos\AutoGlassMarket\AutoGlassMarket\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Павел\source\repos\AutoGlassMarket\AutoGlassMarket\obj\Debug\net5.0\AutoGlassMarket.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Павел\source\repos\AutoGlassMarket\AutoGlassMarket\obj\Debug\net5.0\staticwebassets\AutoGlassMarket.StaticWebAssets.xml

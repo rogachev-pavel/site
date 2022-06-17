@@ -38,6 +38,9 @@ namespace AutoGlassMarket
             services.AddTransient<IAllGlasses, GlassesRepository>();
             services.AddTransient<IBuyers, BuyersRepository>();
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
+
+
            // services.AddScoped(sp => ShopCart.GetCart(sp));
 
 
@@ -68,11 +71,11 @@ namespace AutoGlassMarket
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseDeveloperExceptionPage();
             app.UseStatusCodePages();
-            app.UseStaticFiles();
             app.UseSession();
             //app.UseMvcWithDefaultRoute();
 

@@ -4,35 +4,40 @@
 
 
 <form asp-controller="ShopItem" asp-action="Index" method="get" class="form1">
+   
+    <div class="row mt-3">
+        <h5>Модель:</h5>
+        <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="Brand" name="Brand">
 
+            @foreach (var item2 in Model.GetBrands)
+            {
+                <option value="@item2.Name">@item2.Name</option>
+            }
 
-    <select class="form-select form-select-sm row mt-4" aria-label=".form-select-sm example" id="Brand" name="Brand">
+        </select>
+    </div>
 
-        @foreach (var item2 in Model.GetBrands)
-        {
-            <option value="@item2.Name">@item2.Name</option>
-        }
+    <div class="row mt-3">
+        <h5>Марка:</h5>
+        <select class="form-select form-select-sm " aria-label=".form-select-sm example" id="Model" name="Model" @Model.openModel>
 
-    </select>
+            @foreach (var item2 in Model.GetModels)
+            {
+                <option value="@item2.carModel">@item2.carModel</option>
+            }
+        </select>
+    </div>
 
+    <div class="row mt-3">
+        <h5>Номер кузова или рестайлинг:</h5>
+        <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="Cartype" name="Cartype" @Model.openType>
 
-
-    <select class="form-select form-select-sm row mt-4" aria-label=".form-select-sm example" id="Model" name="Model" @Model.openModel>
-
-        @foreach (var item2 in Model.GetModels)
-        {
-            <option value="@item2.carModel">@item2.carModel</option>
-        }
-    </select>
-
-    <select class="form-select form-select-sm row mt-4" aria-label=".form-select-sm example" id="Cartype" name="Cartype" @Model.openType>
-
-        @foreach (var item2 in Model.GetcarType)
-        {
-            <option value="@item2.cartype">@item2.cartype</option>
-        }
-    </select>
-
+            @foreach (var item2 in Model.GetcarType)
+            {
+                <option value="@item2.cartype">@item2.cartype</option>
+            }
+        </select>
+    </div>
 </form>
 
 
@@ -42,69 +47,18 @@
     {
 
         <div class="col-lg-3 shadow-sm p-3 mb-5 bg-body rounded">
+            <h2 class="text-center">@car.Name @car.carModel @car.cartype</h2>
             <img class="img-thumbnail" src="@car.Glasses.img" alt="@car.fullinfo" />
-            <h2>@car.Name</h2>
-            <p>Модель: @car.carModel</p>
-            <p>Тип кузова: @car.cartype</p>
+            <p>Размер:@car.size </p>
+            <p>Тип кузова: @car.bodytype</p>
             <p>Cтекло: @car.Glasses.typeGlass</p>
             <p>Информация: @car.fullinfo</p>
             <p>Цена: @car.price.ToString("c")</p>
 
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdropLabel2">Купить</button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdropLabel">Купить</button>
         </div>
 
     }
-    <form asp-controller="ShopItem" asp-action="Create">
-    <div class="modal fade" tabindex="-1" id="staticBackdropLabel2" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel2">Modal title</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                    <div class="modal-body">
-                        <label for="validationCustom01" class="control-label">Как к вам обращаться?</label>
-                        <input asp-for="UserName" class="form-control" id="validationCustom01" required />
-                        <span asp-validation-for="UserName" class="text-danger"></span>
-                    </div>
-                    <div class="invalid-feedback">
-                        Введите имя
-                    </div>
-                    <div class="modal-body">
-                        <label asp-for="UserNumber" class="control-label">Номер телефона</label>
-                        <input asp-for="UserNumber" value="89" class="form-control" />
-                        <span asp-validation-for="UserNumber" class="text-danger"></span>
-                    </div>
-
-                    <div class="modal-body">
-                        <label asp-for="ProductInformation" class="control-label">Комментарий</label>
-                        <input asp-for="ProductInformation" class="form-control" />
-                        <span asp-validation-for="ProductInformation" class="text-danger"></span>
-                    </div>
-                    <div class="col-12">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                            <label class="form-check-label" for="invalidCheck">
-                                Согласен на обработку данных
-                            </label>
-                            <div class="invalid-feedback">
-                                You must agree before submitting.
-                            </div>
-                        </div>
-
-                        <div class="mt-3">Наш номер телефона +7 (903)-644-44-40</div>
-
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
-                            <button type="submit" class="btn btn-primary">Заказать звонок</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-</form> 
 </div>
 
 
@@ -127,11 +81,5 @@
             $(".form1").submit();
         });
     });
-
-
-
-
-
-
 
 </script>

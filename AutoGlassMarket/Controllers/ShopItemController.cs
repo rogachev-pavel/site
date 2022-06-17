@@ -68,20 +68,18 @@ namespace AutoGlassMarket.Controllers
                     {
                         obj.GetcarType = _allCars.allCars.Where(x => x.GlassesId.Equals(IdGlasses)).Where(x => x.Name.Contains(Brand)).Where(x => x.carModel.Contains(Model)).GroupBy(x => x.cartype).Where(c => c.Any()).Select(c => c.First()).ToList();
                         obj.GetModels = _allCars.allCars.Where(x => x.GlassesId.Equals(IdGlasses)).Where(x => x.Name.Contains(Brand)).Where(x => x.carModel.Contains(Model)).GroupBy(x => x.carModel).Where(c => c.Any()).Select(c => c.First()).ToList();
-                        obj.AllCars = await Task.Run(() => _allCars.allCars.Where(x => x.GlassesId.Equals(IdGlasses)).Where(x => x.Name.Contains(Brand)).Where(x => x.carModel.Contains(Model)).ToList());
                         obj.openType = "";
+                        obj.AllCars = await Task.Run(() => _allCars.allCars.Where(x => x.GlassesId.Equals(IdGlasses)).Where(x => x.Name.Contains(Brand)).Where(x => x.carModel.Contains(Model)).ToList());
 
                         if (!String.IsNullOrEmpty(Cartype))
                         {
                             obj.GetcarType = obj.GetcarType = _allCars.allCars.Where(x => x.GlassesId.Equals(IdGlasses)).Where(x => x.Name.Contains(Brand)).Where(x => x.carModel.Contains(Model)).GroupBy(x => x.cartype).Where(c => c.Any()).Select(c => c.First()).ToList();
-                            obj.AllCars = await Task.Run(() => _allCars.allCars.Where(x => x.GlassesId.Equals(IdGlasses)).Where(x => x.Name.Contains(Brand)).Where(x => x.carModel.Contains(Model)).Where(x => x.cartype.Contains(Cartype)).ToList());
-                            
+                            obj.AllCars = await Task.Run(() => _allCars.allCars.Where(x => x.GlassesId.Equals(IdGlasses)).Where(x => x.Name.Contains(Brand)).Where(x => x.carModel.Contains(Model)).Where(x => x.cartype.Contains(Cartype)).ToList());   
                         }
                     }
                 }
 
             }
-
             return View( obj);
         }
 
