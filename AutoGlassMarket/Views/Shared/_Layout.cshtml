@@ -23,7 +23,7 @@
                 <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">Главная</a></li>
                 <li class="nav-item"><a href="/ShopItem/List" class="nav-link">Товары</a></li>
                 <li class="nav-item"><a href="/Services/Index" class="nav-link">Услуги</a></li>
-                <li class="nav-item"><a href="/Contacts/Index" class="nav-link">Контакты</a></li>
+                <li class="nav-item"><a href="/Contacts/Index" class="nav-link">О нас</a></li>
             </ul>
         </header>
     </div>
@@ -61,6 +61,7 @@
                 <div class="container">
                     <div class="carousel-caption text-xl-end">
                         <h1>Не можете найти стекло? Позвоните нам.</h1>
+                        <p>Оставьте заявку нажав на кнопку</p>
                         <p><a class="btn btn-lg btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdropLabel">Заказать звонок</a></p>
                     </div>
                 </div>
@@ -76,15 +77,14 @@
         </button>
     </div>
 
-
-
     <div class="container mt-5">
         @RenderBody()
     </div>
 
     <footer class="container">
+        <p>*Цены, указанные на сайте, носят ознакомительный характер и не являются публичной офертой уточняйте, пожалуйста, информацию по телефону +7 (903)-644-44-40.</p>
         <p class="float-end"><a href="#">Back to top</a></p>
-        <p>© 2017–2022 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        <p>© 2001–2022 Company, Inc. · <a href="/Policy">Политика конфиденциальности</a>                                                     
     </footer>
 
     <script src="~/js/bootstrap.min.js"></script>
@@ -97,7 +97,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                    <h5 class="modal-title" id="staticBackdropLabel">Создание заявки</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">

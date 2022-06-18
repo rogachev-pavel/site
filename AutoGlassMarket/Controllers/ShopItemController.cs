@@ -83,8 +83,14 @@ namespace AutoGlassMarket.Controllers
             return View( obj);
         }
 
+        public IActionResult Success()
+        {
+            ViewBag.Title = "Заявка создана";
 
-        
+            return View();
+        }
+
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,UserName,UserNumber,ProductInformation")] Buyers buyers)
@@ -93,7 +99,7 @@ namespace AutoGlassMarket.Controllers
             {
                 _context.AddRange(buyers);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Success));
             }
             return View(buyers);
         }

@@ -1,5 +1,8 @@
 {
   "ConnectionStrings": {
 
+    "DefaultConnection": "Server=***.hosting.reg.ru;Database=********_AutoGlass;User ID=*******_AutogGlass;Password=***************;MultipleActiveResultSets=true"
+
+
   }
 }
