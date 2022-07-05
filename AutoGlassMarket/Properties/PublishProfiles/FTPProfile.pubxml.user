@@ -7,8 +7,8 @@
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAXU535lpBL0OIoXlmYYN3GAAAAAACAAAAAAAQZgAAAAEAACAAAAD5jMw76I9NTWQXn4al6T4YYqDHCTZvp9mLO829XUDsYgAAAAAOgAAAAAIAACAAAACr+/DAVyQ3zmGZIK1MVcFTUzTtMLS4hpvaObyfFDNElzAAAAABYBVZW1TKs/QzcnppwVxZqT9ya1qEsbDP1oHB+XTIpYfC5G3ZlWQpFvS7tYhutdVAAAAAH2qvGtau0rdSqNpMDXvWWhmBK7E1Z/K92NvEe3ozKihq8uK+WX/EdowFnhIs+gbvrspxEMVqmMvsX05R1VNNsQ==</EncryptedPassword>
-    <_PublishTargetUrl>ftp://37.140.192.136/u1711028.plsk.regruhosting.ru</_PublishTargetUrl>
-    <History>True|2022-06-18T17:29:40.6565761Z;True|2022-06-18T20:07:12.7581565+03:00;True|2022-06-18T18:27:47.2533019+03:00;</History>
+    <_PublishTargetUrl>ftp://37.140.192.136/autoglass</_PublishTargetUrl>
+    <History>True|2022-07-03T18:49:00.9334878Z;True|2022-06-24T21:58:52.2087622+03:00;True|2022-06-24T21:25:37.9451180+03:00;False|2022-06-24T21:22:11.6770629+03:00;True|2022-06-22T23:16:21.9274281+03:00;True|2022-06-22T23:08:41.4097747+03:00;False|2022-06-22T23:05:36.6323967+03:00;False|2022-06-22T23:05:15.9901932+03:00;True|2022-06-22T23:01:11.5490896+03:00;False|2022-06-22T22:57:51.6798274+03:00;True|2022-06-22T22:15:11.3615748+03:00;False|2022-06-22T22:12:10.9240698+03:00;False|2022-06-22T22:10:47.1343455+03:00;False|2022-06-22T22:10:27.2096516+03:00;True|2022-06-22T21:30:22.5977546+03:00;True|2022-06-22T21:21:48.7416627+03:00;True|2022-06-22T21:10:03.4178092+03:00;False|2022-06-22T20:58:56.7674530+03:00;False|2022-06-22T10:31:17.5889964+03:00;False|2022-06-22T10:10:21.6228678+03:00;False|2022-06-22T10:09:12.3339017+03:00;False|2022-06-22T10:06:52.5727525+03:00;False|2022-06-22T09:52:50.7204173+03:00;False|2022-06-22T09:49:24.9079360+03:00;False|2022-06-22T09:48:45.5829618+03:00;False|2022-06-22T09:48:09.0344421+03:00;False|2022-06-22T09:40:06.6424098+03:00;False|2022-06-22T09:35:38.2994889+03:00;False|2022-06-22T09:34:59.8791661+03:00;True|2022-06-22T09:15:05.8805987+03:00;False|2022-06-22T09:09:22.4881400+03:00;False|2022-06-22T09:07:43.5970026+03:00;False|2022-06-22T09:01:48.2783297+03:00;False|2022-06-22T09:01:07.1625695+03:00;False|2022-06-22T08:58:20.6942782+03:00;False|2022-06-22T08:36:25.1486754+03:00;False|2022-06-22T08:33:40.3154947+03:00;True|2022-06-22T07:50:40.7630268+03:00;True|2022-06-22T07:25:05.6146570+03:00;True|2022-06-22T01:16:05.5120716+03:00;False|2022-06-22T01:11:04.9360452+03:00;False|2022-06-22T01:07:47.6265342+03:00;True|2022-06-21T17:11:22.3295642+03:00;False|2022-06-21T17:08:04.5525815+03:00;True|2022-06-21T05:31:38.4075375+03:00;False|2022-06-21T05:27:10.9983390+03:00;True|2022-06-18T20:29:40.6565761+03:00;True|2022-06-18T20:07:12.7581565+03:00;True|2022-06-18T18:27:47.2533019+03:00;</History>
   </PropertyGroup>
   <ItemGroup>
     <File Include="api-ms-win-core-console-l1-1-0.dll">
@@ -150,25 +150,25 @@
       <publishTime>04/16/2022 01:10:52</publishTime>
     </File>
     <File Include="AutoGlassMarket.deps.json">
-      <publishTime>06/18/2022 20:26:44</publishTime>
+      <publishTime>07/03/2022 21:45:57</publishTime>
     </File>
     <File Include="AutoGlassMarket.dll">
-      <publishTime>06/18/2022 20:26:43</publishTime>
+      <publishTime>07/03/2022 21:45:55</publishTime>
     </File>
     <File Include="AutoGlassMarket.exe">
-      <publishTime>06/18/2022 20:26:43</publishTime>
+      <publishTime>07/03/2022 21:45:55</publishTime>
     </File>
     <File Include="AutoGlassMarket.pdb">
-      <publishTime>06/18/2022 20:26:43</publishTime>
+      <publishTime>07/03/2022 21:45:55</publishTime>
     </File>
     <File Include="AutoGlassMarket.runtimeconfig.json">
       <publishTime>06/18/2022 20:03:02</publishTime>
     </File>
     <File Include="AutoGlassMarket.Views.dll">
-      <publishTime>06/18/2022 20:26:44</publishTime>
+      <publishTime>07/03/2022 21:45:55</publishTime>
     </File>
     <File Include="AutoGlassMarket.Views.pdb">
-      <publishTime>06/18/2022 20:26:44</publishTime>
+      <publishTime>07/03/2022 21:45:55</publishTime>
     </File>
     <File Include="BouncyCastle.Crypto.dll">
       <publishTime>03/18/2019 14:53:36</publishTime>
@@ -849,46 +849,46 @@
       <publishTime>12/11/2020 03:16:28</publishTime>
     </File>
     <File Include="runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll">
-      <publishTime>08/26/2020 02:25:12</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="runtimes/win-arm/lib/net5.0/dotnet-aspnet-codegenerator-design.exe">
       <publishTime>02/09/2021 04:32:20</publishTime>
     </File>
     <File Include="runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll">
-      <publishTime>08/25/2020 23:34:56</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.pdb">
-      <publishTime>08/25/2020 23:31:56</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="runtimes/win-arm64/lib/net5.0/dotnet-aspnet-codegenerator-design.exe">
       <publishTime>02/09/2021 04:32:20</publishTime>
     </File>
     <File Include="runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll">
-      <publishTime>08/25/2020 23:35:06</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.pdb">
-      <publishTime>08/25/2020 23:31:56</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll">
-      <publishTime>08/25/2020 23:34:56</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.pdb">
-      <publishTime>08/25/2020 23:31:56</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll">
-      <publishTime>08/25/2020 23:34:56</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.pdb">
-      <publishTime>08/25/2020 23:31:56</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll">
-      <publishTime>08/26/2020 02:24:48</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll">
-      <publishTime>11/15/2019 11:53:44</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll">
-      <publishTime>11/15/2019 11:53:46</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="System.AppContext.dll">
       <publishTime>04/14/2022 04:42:34</publishTime>
@@ -1428,7 +1428,7 @@
       <publishTime>11/09/2021 22:09:56</publishTime>
     </File>
     <File Include="web.config">
-      <publishTime>06/18/2022 20:26:45</publishTime>
+      <publishTime>07/03/2022 21:45:57</publishTime>
     </File>
     <File Include="WindowsBase.dll">
       <publishTime>04/14/2022 04:42:32</publishTime>
@@ -1565,6 +1565,12 @@
     <File Include="wwwroot/img/downV1.png">
       <publishTime>06/15/2022 01:38:45</publishTime>
     </File>
+    <File Include="wwwroot/img/favicon.ico">
+      <publishTime>06/22/2022 07:44:27</publishTime>
+    </File>
+    <File Include="wwwroot/img/favicon.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
     <File Include="wwwroot/img/Glass.jpg">
       <publishTime>05/25/2022 15:35:06</publishTime>
     </File>
@@ -1618,6 +1624,9 @@
     </File>
     <File Include="wwwroot/js/bootstrap.min.js.map">
       <publishTime>05/25/2022 19:54:38</publishTime>
+    </File>
+    <File Include="wwwroot/js/robots.txt">
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll">
       <publishTime>12/11/2020 03:15:14</publishTime>

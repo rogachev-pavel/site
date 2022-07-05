@@ -4,9 +4,9 @@ C:\Users\Павел\source\repos\AutoGlassMarket\AutoGlassMarket\obj\Release\net
 C:\Users\Павел\source\repos\AutoGlassMarket\AutoGlassMarket\obj\Release\net5.0\win-x86\PubTmp\Out\wwwroot\css\StyleSheet.css
 C:\Users\Павел\source\repos\AutoGlassMarket\AutoGlassMarket\obj\Release\net5.0\win-x86\PubTmp\Out\wwwroot\img\back.jpg
 C:\Users\Павел\source\repos\AutoGlassMarket\AutoGlassMarket\obj\Release\net5.0\win-x86\PubTmp\Out\wwwroot\img\back.png
-C:\Users\Павел\source\repos\AutoGlassMarket\AutoGlassMarket\obj\Release\net5.0\win-x86\PubTmp\Out\wwwroot\img\down.png
 C:\Users\Павел\source\repos\AutoGlassMarket\AutoGlassMarket\obj\Release\net5.0\win-x86\PubTmp\Out\wwwroot\img\downV.png
 C:\Users\Павел\source\repos\AutoGlassMarket\AutoGlassMarket\obj\Release\net5.0\win-x86\PubTmp\Out\wwwroot\img\downV1.png
+C:\Users\Павел\source\repos\AutoGlassMarket\AutoGlassMarket\obj\Release\net5.0\win-x86\PubTmp\Out\wwwroot\img\favicon.ico
 C:\Users\Павел\source\repos\AutoGlassMarket\AutoGlassMarket\obj\Release\net5.0\win-x86\PubTmp\Out\wwwroot\img\Glass.jpg
 C:\Users\Павел\source\repos\AutoGlassMarket\AutoGlassMarket\obj\Release\net5.0\win-x86\PubTmp\Out\wwwroot\img\GlassLogo.png
 C:\Users\Павел\source\repos\AutoGlassMarket\AutoGlassMarket\obj\Release\net5.0\win-x86\PubTmp\Out\wwwroot\img\LitlleLogoGlass.png

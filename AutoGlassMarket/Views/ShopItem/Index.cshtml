@@ -6,7 +6,7 @@
 <form asp-controller="ShopItem" asp-action="Index" method="get" class="form1">
    
     <div class="row mt-3">
-        <h5>Модель:</h5>
+        <h5>Модель: </h5>
         <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="Brand" name="Brand">
 
             @foreach (var item2 in Model.GetBrands)
@@ -40,7 +40,9 @@
     </div>
 </form>
 
-
+<div class="d-grid gap-2 col-7 mx-auto mt-3 ">
+<a class="btn btn-dark btn-lg" href="/ShopItem/List">Сбросить выбор</a>
+</div>
 
 <div class="row mt-5  mb-2" id="cars">
     @foreach (var car in Model.AllCars)
@@ -67,19 +69,35 @@
 <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
 <script>
 
+
     $(document).ready(function() {
-        $("#Brand").change(function() {
 
-            $(".form1").submit();
-        });
-        $("#Model").change(function() {
+        var clickCounter = 0;
+        window.onload = function() {
+            document.getElementById("Brand").onclick = function() {
+                clickCounter++;
+                if (clickCounter == 2) {
+                    $(".form1").submit();
+                }
+            };
 
-            $(".form1").submit();
-        });
-        $("#Cartype").change(function() {
+            document.getElementById("Model").onclick = function() {
+                clickCounter++;
+                if (clickCounter == 2) {
+                    $(".form1").submit();
+                }
+            };
 
-            $(".form1").submit();
-        });
+            
+            document.getElementById("Cartype").onclick = function() {
+                clickCounter++;
+                if (clickCounter == 2) {
+                    $(".form1").submit();
+                }
+            };
+        }
     });
+
+
 
 </script>

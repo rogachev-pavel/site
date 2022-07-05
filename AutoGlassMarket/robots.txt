@@ -1,0 +1,15 @@
+User-agent: *
+Crawl-delay: 3
+Disallow: /Shopitem/Success
+Disallow: /Shopitem/Index/*?Brand=*
+Disallow: /Shopitem/Index/2
+Disallow: /Shopitem/Index/3
+Disallow: /Policy
+
+User-agent: Yandex
+Crawl-delay: 3
+Disallow: /Shopitem/Success
+Disallow: /Shopitem/Index/*?Brand=*
+Disallow: /Shopitem/Index/2
+Disallow: /Shopitem/Index/3
+Disallow: /Policy

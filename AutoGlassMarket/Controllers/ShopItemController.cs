@@ -61,7 +61,7 @@ namespace AutoGlassMarket.Controllers
                     obj.GetcarType = _allCars.allCars.Where(x => x.GlassesId.Equals(IdGlasses)).Where(x => x.Name.Contains(Brand)).GroupBy(x => x.cartype).Where(c => c.Any()).Select(c => c.First()).ToList();
                     obj.GetModels = _allCars.allCars.Where(x => x.GlassesId.Equals(IdGlasses)).Where(x => x.Name.Contains(Brand)).GroupBy(x => x.carModel).Where(c => c.Any()).Select(c => c.First()).ToList();
                     obj.GetBrands = _allCars.allCars.Where(x => x.GlassesId.Equals(IdGlasses)).Where(x => x.Name.Contains(Brand)).GroupBy(c => c.Name).Where(c => c.Any()).Select(c => c.First()).ToList();
-                    obj.openModel = " ";
+                    obj.openModel = " ";           
                     obj.AllCars = await Task.Run(() => _allCars.allCars.Where(x => x.GlassesId.Equals(IdGlasses)).Where(x => x.Name.Contains(Brand)).ToList());
 
                     if (!String.IsNullOrEmpty(Model))
