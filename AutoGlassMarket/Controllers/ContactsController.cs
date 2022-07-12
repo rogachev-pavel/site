@@ -12,6 +12,7 @@ namespace AutoGlassMarket.Controllers
     {
         public IActionResult Index()
         {
+            ViewBag.Title = "Автостекла32 - контакты";
             return View(); 
         }
 

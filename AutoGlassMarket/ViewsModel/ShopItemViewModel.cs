@@ -20,7 +20,9 @@ namespace AutoGlassMarket.ViewsModel
         [Required]
         public int UserNumber { get; set; }
         public string ProductInformation { get; set; }
-
+        public string Brand { get; set; }
+        public string Model { get; set; }
+        public string Cartype { get; set; }
         public string openModel { get; set; }
         public string openType { get; set; }
     }

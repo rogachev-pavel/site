@@ -2,25 +2,26 @@
 
 
 
+ <form asp-controller="ShopItem" asp-action="Index" method="get" class="form1">
 
-<form asp-controller="ShopItem" asp-action="Index" method="get" class="form1">
-   
     <div class="row mt-3">
-        <h5>Модель: </h5>
-        <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="Brand" name="Brand">
-
+        <h5>Марка: </h5>
+        <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="Brand" name="Brand" onchange="this.form.submit()">
+            <option selected>@Model.Brand</option>
             @foreach (var item2 in Model.GetBrands)
             {
                 <option value="@item2.Name">@item2.Name</option>
             }
-
+   
         </select>
     </div>
+    
+
 
     <div class="row mt-3">
-        <h5>Марка:</h5>
-        <select class="form-select form-select-sm " aria-label=".form-select-sm example" id="Model" name="Model" @Model.openModel>
-
+        <h5>Модель:</h5>
+        <select class="form-select form-select-sm " aria-label=".form-select-sm example" id="Model" name="Model" onchange="this.form.submit()" @Model.openModel>
+            <option selected>@Model.Model</option>
             @foreach (var item2 in Model.GetModels)
             {
                 <option value="@item2.carModel">@item2.carModel</option>
@@ -30,8 +31,8 @@
 
     <div class="row mt-3">
         <h5>Номер кузова или рестайлинг:</h5>
-        <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="Cartype" name="Cartype" @Model.openType>
-
+        <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="Cartype" name="Cartype" onchange="this.form.submit()" @Model.openType>
+            <option selected>@Model.Cartype</option>
             @foreach (var item2 in Model.GetcarType)
             {
                 <option value="@item2.cartype">@item2.cartype</option>
@@ -41,7 +42,7 @@
 </form>
 
 <div class="d-grid gap-2 col-7 mx-auto mt-3 ">
-<a class="btn btn-dark btn-lg" href="/ShopItem/List">Сбросить выбор</a>
+    <a class="btn btn-dark btn-lg" href="/ShopItem/List">Сбросить выбор</a>
 </div>
 
 <div class="row mt-5  mb-2" id="cars">
@@ -70,34 +71,13 @@
 <script>
 
 
+
     $(document).ready(function() {
+        $("#Model").change(function() {
 
-        var clickCounter = 0;
-        window.onload = function() {
-            document.getElementById("Brand").onclick = function() {
-                clickCounter++;
-                if (clickCounter == 2) {
-                    $(".form1").submit();
-                }
-            };
-
-            document.getElementById("Model").onclick = function() {
-                clickCounter++;
-                if (clickCounter == 2) {
-                    $(".form1").submit();
-                }
-            };
-
-            
-            document.getElementById("Cartype").onclick = function() {
-                clickCounter++;
-                if (clickCounter == 2) {
-                    $(".form1").submit();
-                }
-            };
-        }
-    });
-
-
+           
+            $(".form2").submit();
+        });
+    })
 
 </script>
